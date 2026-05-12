@@ -1,11 +1,11 @@
 @keyframes floatBg {
   0%,
   100% {
-    background-position: right 0px;
+    background-position: right 300px;
   }
 
   50% {
-    background-position: right 30px;
+    background-position: right 400px;
   }
 }
 
