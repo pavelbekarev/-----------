@@ -4,7 +4,7 @@
 }
 
 .mainBanner {
-  min-height: 80vh;
+  min-height: 75vh;
   width: 100%;
   background: url("../imgs/packets.png") no-repeat;
   background-position: right;
