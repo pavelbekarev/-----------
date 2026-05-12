@@ -408,17 +408,24 @@
 }
 
 .packets-service__content {
+  position: relative;
   display: grid;
   grid-template-columns: 30% 70%;
 }
 
 .packets-service__content .button {
+  position: absolute;
+  bottom: 10%;
   margin-top: 4px;
 }
 
 @media screen and (max-width: 1500px) {
   .packets-service__content {
     grid-template-columns: 40% 60%;
+  }
+
+  .packets-service__content .button {
+    position: relative;
   }
 }
 
@@ -849,7 +856,6 @@ td:last-child {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-auto-flow: column;
-  grid-auto-columns: 220px;
   gap: 20px;
   /* row-gap: 14px; */
   column-gap: 35px;
@@ -872,7 +878,7 @@ td:last-child {
 }
 
 .package-info__project {
-  width: 160px;
+  width: 250px;
 }
 
 .package-info__project img {
