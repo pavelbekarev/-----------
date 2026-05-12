@@ -227,7 +227,7 @@
 
         <section class="packets-service">
           <div class="container packets-service__content">
-            <div class="packets-service-left">
+            <div class="packets-service-left bubble">
               <h2 class="service-title">ПВД пакеты</h2>
               <span class="service-description packets-service__description"
                 >Прочные и практичные пакеты с нанесением логотипа - отличный
@@ -240,7 +240,7 @@
               </ul>
             </div>
             <div class="packets-service-right">
-              <div class="table-wrapper">
+              <div class="table-wrapper bubble">
                 <table>
                   <thead>
                     <tr class="thead-palettes">
@@ -338,8 +338,8 @@
 
         <section class="palette-service">
           <div class="container">
-            <h2 class="service-title">Палитра цветов</h2>
-            <div class="palette-service__grid">
+            <h2 class="service-title bubble">Палитра цветов</h2>
+            <div class="palette-service__grid bubble">
               <div class="palette-service__palette">
                 <img
                   class="palette-service__palette-img"
@@ -578,7 +578,7 @@
               <span class="service-title--desktop-hidden">и примеры работ</span>
             </h2>
 
-            <div class="package-info__grid">
+            <div class="package-info__grid bubble">
               <div class="package-info__package-sizes">
                 <img
                   src="./assets/imgs/packageSizes.png"
@@ -637,11 +637,30 @@
             <h2 class="service-title">Наше производство</h2>
 
             <div class="videos">
-              <div class="video video-big"></div>
+              <!-- Большое видео (iframe) -->
+              <iframe
+                class="video video-big bubble"
+                src="https://rutube.ru/play/embed/3200868e048a63ed70447789f896468f/"
+                frameborder="0"
+                allowfullscreen
+              >
+              </iframe>
 
-              <div class="video-column">
-                <div class="video video-small"></div>
-                <div class="video video-small"></div>
+              <div class="video-column bubble">
+                <iframe
+                  class="video video-small"
+                  src="https://rutube.ru/play/embed/3200868e048a63ed70447789f896468f/"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </iframe>
+                <iframe
+                  class="video video-small"
+                  src="https://rutube.ru/play/embed/3200868e048a63ed70447789f896468f/"
+                  frameborder="0"
+                  allowfullscreen
+                >
+                </iframe>
               </div>
             </div>
           </div>

@@ -157,6 +157,23 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, observerOptions);
 
+  const bubbleObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.2,
+    },
+  );
+
+  document.querySelectorAll(".bubble").forEach((el) => {
+    bubbleObserver.observe(el);
+  });
+
   const datasBlock = document.querySelector(".datas-block");
   if (datasBlock) {
     countObserver.observe(datasBlock);
