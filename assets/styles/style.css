@@ -9,7 +9,7 @@ body {
 }
 
 .wrapper {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 ul,
@@ -30,7 +30,7 @@ span {
   max-width: 1791px;
   width: 100%;
   margin: 0 auto;
-  /* padding: 0 50px; */
+  padding: 0 50px;
 }
 
 @media screen and (max-width: 1100px) {
@@ -43,6 +43,31 @@ span {
   .container {
     padding: 0 15px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 13px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d8d8d8;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f2f2f2;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header {
